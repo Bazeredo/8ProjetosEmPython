@@ -1,3 +1,4 @@
+#Bibliotecas
 import PySimpleGUI as sg
 import random
 
