@@ -1,21 +1,20 @@
 #Bibliotecas
-import PySimpleGUI as sg
 import random
-
+import PySimpleGUI as sg
 
 class SimuladorDeDado:
     def __init__(self):
         self.valor_minimo = 1
         self.valor_maximo = 6
-        #layout
+        # Layout
         self.layout = [
-            [sg.Text('Jogar o dado')],
-            [sg.Button('sim'),sg.Button('nao')]
+            [sg.Text('Jogar o dado?')],
+            [sg.Button('sim'),sg.Button('Não')]
         ]
-        
+    
     def Iniciar(self):
-        #criar uma janela
-        self.janela = sg.Window('Simulador da Dado',Layout=self.layout)
+        # criar uma janela
+        self.janela = sg.Window('Simulador de Dado',layout=self.layout)
         #ler os valores da tela
         self.eventos, self.valores = self.janela.Read()
         #fazer alguma coisa com esses valores
